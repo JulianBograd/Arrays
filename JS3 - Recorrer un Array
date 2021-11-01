@@ -1,0 +1,16 @@
+// Recorrer un Array
+
+const months = ['Enero', 'Febrero', 'Marzo', 'Abril', 'Mayo', 'Junio', 'Julio'];
+console.table(months);
+console.table(months[0]);
+console.table(months[1]);
+console.table(months[2]);
+
+// Cuánto mide el arreglo
+console.log(months.length);
+
+// el FOR es una función que tiene 3 partes en el paréntesis: 1 el valor del que va a iniciar, 2 cuantas veces
+// quiero que se ejecute este código, 3
+for(let i = 0; i < months.length; i++) {
+    console.log(months[i]);
+}
