@@ -1,0 +1,20 @@
+// .map para iterar un array, y sus diferencias con .forEach
+
+const shoppingCart = [
+    {name: 'Monitor de 27 pulgadas', price: 500},
+    {name: 'Televisión', price: 100},
+    {name: 'Tablet', price: 200},
+    {name: 'Auriculares', price: 300},
+    {name: 'Teclado', price: 50},
+    {name: 'Celular', price: 1000},
+]
+
+shoppingCart.forEach(function(product) {
+    console.log(`${product.name} - Precio: ${product.price}`);
+})
+
+// la diferencia es que .map crea un arreglo nuevo, mientras que forEach no
+
+shoppingCart.map(function(product) {
+    console.log(`${product.name} - Precio: ${product.price}`);
+}) 
