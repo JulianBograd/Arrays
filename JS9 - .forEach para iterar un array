@@ -1,0 +1,20 @@
+// .forEach para iterar un array
+
+const shoppingCart = [
+    {name: 'Monitor de 27 pulgadas', price: 500},
+    {name: 'Celular', price: 900},
+    {name: 'Teclado', price: 50},
+    {name: 'Parlante', price: 300},
+    {name: 'CPU gama alta', price: 2000},
+    {name: 'Cable HDMI', price: 75},
+]
+
+
+//for(let i=0; i<shoppingCart.length; i++) {
+//    console.log(`${shoppingCart[i].name} - Precio: ${shoppingCart[i].price}`);
+//}
+
+// Hacer lo mismo con método de array
+shoppingCart.forEach(function(product) {
+    console.log(`${product.name} - Precio: ${product.price}`);
+})
