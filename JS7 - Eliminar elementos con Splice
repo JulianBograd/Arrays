@@ -1,0 +1,48 @@
+// Eliminar elementos con Splice
+
+const shoppingCart = [];
+
+const product = {
+    name: 'Monitor de 32 pulgadas',
+    price: 400,
+}
+
+const product2 = {
+    name: 'Celular',
+    price: 800,
+}
+
+const product3 = {
+    name: 'Teclado',
+    price: 50,
+}
+
+const product4 = {
+    name: 'Parlante',
+    price: 300,
+}
+
+shoppingCart.push(product);
+shoppingCart.push(product2);
+shoppingCart.unshift(product3);
+
+console.table(shoppingCart);
+
+// Eliminar el último elemento de un arreglo
+
+shoppingCart.pop();
+console.table(shoppingCart);
+
+// Eliminar del inicio
+
+shoppingCart.shift();
+console.table(shoppingCart);
+
+shoppingCart.push(product4);
+shoppingCart.push(product2);
+shoppingCart.unshift(product3);
+console.table(shoppingCart);
+
+// Eliminar según la posición y cuántos elementos
+shoppingCart.splice(1, 1);
+console.table(shoppingCart);
