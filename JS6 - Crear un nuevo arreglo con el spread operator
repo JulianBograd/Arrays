@@ -1,0 +1,25 @@
+// Crear un nuevo arreglo con el spread operator
+
+const shoppingCart = [];
+
+const product = {
+    name: 'Monitor de 32 pulgadas',
+    price: 400
+}
+
+const product2 = {
+    name: 'Celular',
+    price: 800,
+}
+
+const product3 = {
+    name: 'Teclado',
+    price: 50
+}
+
+let outcome;
+outcome = [...shoppingCart, product];
+outcome = [...outcome, product3];
+
+console.table(shoppingCart);
+console.table(outcome);
