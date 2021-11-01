@@ -1,0 +1,11 @@
+// Agregar nuevos valores a un Array
+
+const months = ['Enero', 'Febrero', 'Marzo', 'Abril', 'Mayo', 'Junio', 'Julio'];
+
+// Modificar un valor
+months[0] = 'Nuevo mes';
+
+// Agregar un valor
+months[7] = 'Agosto';
+
+console.table(months);
